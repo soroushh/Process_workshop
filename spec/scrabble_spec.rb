@@ -17,6 +17,11 @@ describe Scrabble do
 
   it "The score of 'a' is 1" do
     scrabble = Scrabble.new("a")
-    expect(scrabble.score()).to eq 1 
+    expect(scrabble.score()).to eq 1
+  end
+
+  it "The score of 'f' is four" do
+    scrabble = Scrabble.new("f")
+    expect(scrabble.score()).to eq 4
   end
 end

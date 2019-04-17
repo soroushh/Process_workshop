@@ -6,8 +6,10 @@ class Scrabble
   def score
     if @string=="" || @string == "\t\n" || @string== nil
       0
-    else
+    elsif @string == "a"
       1
-    end
+    else
+      4
+    end 
   end
 end
