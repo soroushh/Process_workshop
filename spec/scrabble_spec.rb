@@ -7,6 +7,11 @@ describe Scrabble do
 
   it "The score of '\t\n' is zero" do
     scrabble = Scrabble.new("\t\n")
-    expect(scrabble.score()).to eq 0 
+    expect(scrabble.score()).to eq 0
+  end
+
+  it "The score of nil is zero" do
+    scrabble = Scrabble.new(nil)
+    expect(scrabble.score()).to eq 0
   end
 end
