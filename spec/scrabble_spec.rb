@@ -4,4 +4,9 @@ describe Scrabble do
     scrabble = Scrabble.new('')
     expect(scrabble.score()).to eq 0
   end
+
+  it "The score of '\t\n' is zero" do
+    scrabble = Scrabble.new("\t\n")
+    expect(scrabble.score()).to eq 0 
+  end
 end
