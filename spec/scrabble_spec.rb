@@ -14,4 +14,9 @@ describe Scrabble do
     scrabble = Scrabble.new(nil)
     expect(scrabble.score()).to eq 0
   end
+
+  it "The score of 'a' is 1" do
+    scrabble = Scrabble.new("a")
+    expect(scrabble.score()).to eq 1 
+  end
 end
